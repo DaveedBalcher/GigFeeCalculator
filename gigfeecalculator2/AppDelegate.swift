@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GigFeeCalculator1
+//  GigFeeCalculator2
 //
-//  Created by David Balcher on 12/12/14.
+//  Created by David Balcher on 12/27/14.
 //  Copyright (c) 2014 David Balcher. All rights reserved.
 //
 
@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        Event.saveEvents()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {

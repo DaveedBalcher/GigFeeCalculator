@@ -1,14 +1,14 @@
 //
-//  Event.swift
-//  GigFeeCalculator1
+//  Calculate.swift
+//  GigFeeCalculator2
 //
-//  Created by David Balcher on 12/12/14.
+//  Created by David Balcher on 12/28/14.
 //  Copyright (c) 2014 David Balcher. All rights reserved.
 //
 
 import Foundation
 
-class Event {
+class Calculate {
     
     let costPerMusicianHour = 95
     let costPerTravelHour = 12.0
@@ -23,7 +23,7 @@ class Event {
     
     func eventRate(serviceLength: Double, numMusicians: Int) -> Int{
         let newCostPerMusicianHour = numGuestsBias()
-        let rawRate:Int = Int(serviceLength*(Double(numMusicians*costPerMusicianHour)))
+        let rawRate:Int = Int(serviceLength*(Double(numMusicians*newCostPerMusicianHour)))
         let rate = round(rawNumber: rawRate, roundingAmount: 10)
         return rate
     }

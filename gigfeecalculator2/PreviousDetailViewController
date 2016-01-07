@@ -1,0 +1,234 @@
+//
+//  DetailViewController.swift
+//  GigFeeCalculator2
+//
+//  Created by David Balcher on 12/27/14.
+//  Copyright (c) 2014 David Balcher. All rights reserved.
+//
+
+import UIKit
+
+class DetailViewController: UIViewController, UITextFieldDelegate {
+    
+    //Numeric input text fields for calculations
+    @IBOutlet weak var serviceLengthField: UITextField!
+    @IBOutlet weak var numMusiciansField: UITextField!
+    @IBOutlet weak var travelTimeField: UITextField!
+    @IBOutlet weak var travelDistanceField: UITextField!
+    @IBOutlet weak var numGuestsField: UITextField!
+    
+    //Text fields for proposel write-up
+    @IBOutlet weak var hostNameField: UITextField!
+    @IBOutlet weak var eventTypeField: UITextField!
+    @IBOutlet weak var eventDateField: UITextField!
+    @IBOutlet weak var cityField: UITextField!
+    @IBOutlet weak var venueField: UITextField!
+    @IBOutlet weak var bandField: UITextField!
+
+    @IBOutlet weak var subEventController: UISegmentedControl!
+    
+    //Numeric input for calculations
+    var serviceLength = [0.0,0.0,0.0]
+    var numMusicians = [0,0,0]
+    var travelTime = 0.0
+    var milage = 0.0
+    var numGuests = 0
+    var subEvent = 0
+    var textFieldCounter = 0
+    var previousText = ""
+    
+    //Text input for proposel write-up
+    var hostName = "______"
+    var eventType = "______"
+    var eventDate = "__/__/__"
+    var city = "______"
+    var venue = "______"
+    var band = ["______","______","______"]
+    
+    
+    var currentEvent: Event?
+    var currentEventNumber: Int?
+    var masterView: MasterViewController?
+    var allTextFields = [UITextField]()
+    var arrayOfEventDetails = [String]()
+    var events = [Event]()
+    
+    
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true) //When
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        allTextFields = [serviceLengthField, numMusiciansField, travelTimeField, travelDistanceField, numGuestsField, hostNameField]
+        
+        if (currentEvent != nil) {
+            serviceLength = currentEvent!.serviceLength
+            numMusicians = currentEvent!.numMusicians
+            travelTime = currentEvent!.travelTime
+            milage = currentEvent!.milage
+            numGuests = currentEvent!.numGuests
+            hostName = currentEvent!.hostName
+            
+            arrayOfEventDetails = currentEvent!.createArrayOfEventDetails(subEvent)
+            updateTextFields()
+        }
+        
+        hostNameField.delegate = self
+        eventTypeField.delegate = self
+        eventDateField.delegate = self
+        numGuestsField.delegate = self
+        cityField.delegate = self
+        venueField.delegate = self
+        travelTimeField.delegate = self
+        travelDistanceField.delegate = self
+        bandField.delegate = self
+        serviceLengthField.delegate = self
+        numMusiciansField.delegate = self
+    }
+
+    
+    func saveEventDetails(index: Int, event: Event) {
+        events[index] = event
+    }
+    
+    //This function loads details from a saved event
+    func updateTextFields() {
+        for var detail = 0; detail < allTextFields.count; detail++ {
+            allTextFields[detail].text = arrayOfEventDetails[detail]
+        }
+    }
+    
+    @IBAction func eventTypeDidChange(sender: AnyObject) {
+        subEvent = subEventController.selectedSegmentIndex
+        resetSubEventFields()
+    }
+    
+    func resetSubEventFields() {
+        if (serviceLength[subEvent] == 0) {
+            serviceLengthField.text = "Service Length"
+        } else {
+            serviceLengthField.text = "\(serviceLength[subEvent]) service hours"
+        }
+        if (numMusicians[subEvent] == 0) {
+            numMusiciansField.text = "# of Musicians"
+        } else {
+            numMusiciansField.text = "\(numMusicians[subEvent]) musicians"
+        }
+    }
+    
+    
+     
+    //Custom functionality for text fields
+    func textFieldDidBeginEditing(textField: UITextField!) ->  Bool {
+        //delegate method
+        previousText = textField.text
+        textField.text = ""
+        return true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField!) -> Bool {
+        //delegate method
+        var isNumeric = false
+        if (textField.text.toDouble() != nil) {
+            isNumeric = true
+            switch (textField) {
+            case (numGuestsField):
+                numGuests = numGuestsField.text.toInt()!
+                numGuestsField.text = "\(numGuests) guests"
+            case (travelTimeField):
+                travelTime = travelTimeField.text.toDouble()!
+                travelTimeField.text = "\(travelTime) travel hours"
+            case (travelDistanceField):
+                milage = travelDistanceField.text.toDouble()!
+                travelDistanceField.text = "\(milage) travel miles"
+            case (serviceLengthField):
+                serviceLength[subEvent] = serviceLengthField.text.toDouble()!
+                serviceLengthField.text = "\(serviceLength[subEvent]) service hours"
+            case (numMusiciansField):
+                numMusicians[subEvent] = numMusiciansField.text.toInt()!
+                numMusiciansField.text = "\(numMusicians[subEvent]) musicians"
+            default:
+                print()
+            }
+        }
+        
+        if (!isNumeric) {
+            switch (textField) {
+            case (hostNameField):
+                hostName = textField.text
+            case (eventTypeField):
+                eventType = textField.text
+            case (eventDateField):
+                eventDate = textField.text
+            case (hostNameField):
+                hostName = textField.text
+            case (eventTypeField):
+                eventType = textField.text
+            case (eventDateField):
+                eventDate = textField.text
+            case (cityField):
+                city = textField.text
+            case (venueField):
+                venue = textField.text
+            case (bandField):
+                band[subEvent] = textField.text
+            default:
+                print()
+            }
+        }
+        
+        //If the user does not enter text, the field will revert to the previous text label
+        if (textField.text == "") {
+            textField.text = previousText
+        }
+        
+        saveEventDetails(currentEventNumber!, event: currentEvent!)
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var thirdScene = segue.destinationViewController as ResultsViewController
+        // Pass the selected object to the new view controller.
+        thirdScene.currentEvent = currentEvent
+        
+//        var firstScene = segue.destinationViewController as MasterViewController
+//        // Pass the selected object to the new view controller.
+//        firstScene.events = events
+        
+    }
+
+
+
+}
+
+
+extension String {
+    //allows for a String to be converted to a Double
+    func toDouble() -> Double? {
+        return NSNumberFormatter().numberFromString(self)?.doubleValue
+    }
+    
+    //get nth charactor of a String
+    subscript (i: Int) -> String {
+        return String(Array(self)[i])
+    }
+    subscript (r: Range<Int>) -> String {
+        var start = advance(startIndex, r.startIndex)
+        var end = advance(startIndex, r.endIndex)
+        return substringWithRange(Range(start: start, end: end))
+    }
+}
+

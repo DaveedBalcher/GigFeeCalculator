@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GigFeeCalculator1.xcscheme</key>
+		<key>GigFeeCalculator2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>43194CFC1A3B531400600BDF</key>
+		<key>430196071A4F166F00A9915A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43194D111A3B531400600BDF</key>
+		<key>4301961E1A4F166F00A9915A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

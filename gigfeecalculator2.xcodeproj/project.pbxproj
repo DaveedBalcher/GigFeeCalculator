@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4301960E1A4F166F00A9915A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301960D1A4F166F00A9915A /* AppDelegate.swift */; };
+		430196101A4F166F00A9915A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301960F1A4F166F00A9915A /* MasterViewController.swift */; };
+		430196121A4F166F00A9915A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430196111A4F166F00A9915A /* DetailViewController.swift */; };
+		430196151A4F166F00A9915A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430196131A4F166F00A9915A /* Main.storyboard */; };
+		430196171A4F166F00A9915A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430196161A4F166F00A9915A /* Images.xcassets */; };
+		4301961A1A4F166F00A9915A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430196181A4F166F00A9915A /* LaunchScreen.xib */; };
+		430196261A4F166F00A9915A /* GigFeeCalculator2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430196251A4F166F00A9915A /* GigFeeCalculator2Tests.swift */; };
+		430196301A4F808900A9915A /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301962F1A4F808900A9915A /* ResultsViewController.swift */; };
+		430196331A4F94EF00A9915A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430196321A4F94EF00A9915A /* Event.swift */; };
+		430196351A506CA100A9915A /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430196341A506CA100A9915A /* Calculate.swift */; };
+		430F02101A90625A00653B3D /* PreviousDetailViewController in Resources */ = {isa = PBXBuildFile; fileRef = 430F020F1A90625A00653B3D /* PreviousDetailViewController */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		430196201A4F166F00A9915A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430196001A4F166F00A9915A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430196071A4F166F00A9915A;
+			remoteInfo = GigFeeCalculator2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		430196081A4F166F00A9915A /* GigFeeCalculator2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigFeeCalculator2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4301960C1A4F166F00A9915A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4301960D1A4F166F00A9915A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4301960F1A4F166F00A9915A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		430196111A4F166F00A9915A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		430196141A4F166F00A9915A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		430196161A4F166F00A9915A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		430196191A4F166F00A9915A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4301961F1A4F166F00A9915A /* GigFeeCalculator2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigFeeCalculator2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		430196241A4F166F00A9915A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430196251A4F166F00A9915A /* GigFeeCalculator2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigFeeCalculator2Tests.swift; sourceTree = "<group>"; };
+		4301962F1A4F808900A9915A /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		430196311A4F887300A9915A /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		430196321A4F94EF00A9915A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		430196341A506CA100A9915A /* Calculate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		430F020F1A90625A00653B3D /* PreviousDetailViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PreviousDetailViewController; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		430196051A4F166F00A9915A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4301961C1A4F166F00A9915A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430195FF1A4F166F00A9915A = {
+			isa = PBXGroup;
+			children = (
+				4301960A1A4F166F00A9915A /* GigFeeCalculator2 */,
+				430196221A4F166F00A9915A /* GigFeeCalculator2Tests */,
+				430196091A4F166F00A9915A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		430196091A4F166F00A9915A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430196081A4F166F00A9915A /* GigFeeCalculator2.app */,
+				4301961F1A4F166F00A9915A /* GigFeeCalculator2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4301960A1A4F166F00A9915A /* GigFeeCalculator2 */ = {
+			isa = PBXGroup;
+			children = (
+				430196321A4F94EF00A9915A /* Event.swift */,
+				4301960F1A4F166F00A9915A /* MasterViewController.swift */,
+				430196111A4F166F00A9915A /* DetailViewController.swift */,
+				430F020F1A90625A00653B3D /* PreviousDetailViewController */,
+				4301962F1A4F808900A9915A /* ResultsViewController.swift */,
+				430196341A506CA100A9915A /* Calculate.swift */,
+				4301960D1A4F166F00A9915A /* AppDelegate.swift */,
+				430196131A4F166F00A9915A /* Main.storyboard */,
+				430196161A4F166F00A9915A /* Images.xcassets */,
+				430196181A4F166F00A9915A /* LaunchScreen.xib */,
+				430196311A4F887300A9915A /* Test.playground */,
+				4301960B1A4F166F00A9915A /* Supporting Files */,
+			);
+			path = GigFeeCalculator2;
+			sourceTree = "<group>";
+		};
+		4301960B1A4F166F00A9915A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4301960C1A4F166F00A9915A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		430196221A4F166F00A9915A /* GigFeeCalculator2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				430196251A4F166F00A9915A /* GigFeeCalculator2Tests.swift */,
+				430196231A4F166F00A9915A /* Supporting Files */,
+			);
+			path = GigFeeCalculator2Tests;
+			sourceTree = "<group>";
+		};
+		430196231A4F166F00A9915A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				430196241A4F166F00A9915A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		430196071A4F166F00A9915A /* GigFeeCalculator2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430196291A4F166F00A9915A /* Build configuration list for PBXNativeTarget "GigFeeCalculator2" */;
+			buildPhases = (
+				430196041A4F166F00A9915A /* Sources */,
+				430196051A4F166F00A9915A /* Frameworks */,
+				430196061A4F166F00A9915A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GigFeeCalculator2;
+			productName = GigFeeCalculator2;
+			productReference = 430196081A4F166F00A9915A /* GigFeeCalculator2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4301961E1A4F166F00A9915A /* GigFeeCalculator2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4301962C1A4F166F00A9915A /* Build configuration list for PBXNativeTarget "GigFeeCalculator2Tests" */;
+			buildPhases = (
+				4301961B1A4F166F00A9915A /* Sources */,
+				4301961C1A4F166F00A9915A /* Frameworks */,
+				4301961D1A4F166F00A9915A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				430196211A4F166F00A9915A /* PBXTargetDependency */,
+			);
+			name = GigFeeCalculator2Tests;
+			productName = GigFeeCalculator2Tests;
+			productReference = 4301961F1A4F166F00A9915A /* GigFeeCalculator2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		430196001A4F166F00A9915A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "David Balcher";
+				TargetAttributes = {
+					430196071A4F166F00A9915A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4301961E1A4F166F00A9915A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 430196071A4F166F00A9915A;
+					};
+				};
+			};
+			buildConfigurationList = 430196031A4F166F00A9915A /* Build configuration list for PBXProject "GigFeeCalculator2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 430195FF1A4F166F00A9915A;
+			productRefGroup = 430196091A4F166F00A9915A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				430196071A4F166F00A9915A /* GigFeeCalculator2 */,
+				4301961E1A4F166F00A9915A /* GigFeeCalculator2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		430196061A4F166F00A9915A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430196151A4F166F00A9915A /* Main.storyboard in Resources */,
+				4301961A1A4F166F00A9915A /* LaunchScreen.xib in Resources */,
+				430196171A4F166F00A9915A /* Images.xcassets in Resources */,
+				430F02101A90625A00653B3D /* PreviousDetailViewController in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4301961D1A4F166F00A9915A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		430196041A4F166F00A9915A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430196351A506CA100A9915A /* Calculate.swift in Sources */,
+				430196121A4F166F00A9915A /* DetailViewController.swift in Sources */,
+				430196101A4F166F00A9915A /* MasterViewController.swift in Sources */,
+				4301960E1A4F166F00A9915A /* AppDelegate.swift in Sources */,
+				430196301A4F808900A9915A /* ResultsViewController.swift in Sources */,
+				430196331A4F94EF00A9915A /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4301961B1A4F166F00A9915A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430196261A4F166F00A9915A /* GigFeeCalculator2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		430196211A4F166F00A9915A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430196071A4F166F00A9915A /* GigFeeCalculator2 */;
+			targetProxy = 430196201A4F166F00A9915A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		430196131A4F166F00A9915A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430196141A4F166F00A9915A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		430196181A4F166F00A9915A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430196191A4F166F00A9915A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		430196271A4F166F00A9915A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		430196281A4F166F00A9915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4301962A1A4F166F00A9915A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GigFeeCalculator2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4301962B1A4F166F00A9915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GigFeeCalculator2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4301962D1A4F166F00A9915A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GigFeeCalculator2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GigFeeCalculator2.app/GigFeeCalculator2";
+			};
+			name = Debug;
+		};
+		4301962E1A4F166F00A9915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GigFeeCalculator2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GigFeeCalculator2.app/GigFeeCalculator2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		430196031A4F166F00A9915A /* Build configuration list for PBXProject "GigFeeCalculator2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430196271A4F166F00A9915A /* Debug */,
+				430196281A4F166F00A9915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430196291A4F166F00A9915A /* Build configuration list for PBXNativeTarget "GigFeeCalculator2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4301962A1A4F166F00A9915A /* Debug */,
+				4301962B1A4F166F00A9915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4301962C1A4F166F00A9915A /* Build configuration list for PBXNativeTarget "GigFeeCalculator2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4301962D1A4F166F00A9915A /* Debug */,
+				4301962E1A4F166F00A9915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 430196001A4F166F00A9915A /* Project object */;
+}

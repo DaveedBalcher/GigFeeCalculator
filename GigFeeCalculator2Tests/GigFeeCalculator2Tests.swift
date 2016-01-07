@@ -1,15 +1,15 @@
 //
-//  GigFeeCalculator1Tests.swift
-//  GigFeeCalculator1Tests
+//  GigFeeCalculator2Tests.swift
+//  GigFeeCalculator2Tests
 //
-//  Created by David Balcher on 12/12/14.
+//  Created by David Balcher on 12/27/14.
 //  Copyright (c) 2014 David Balcher. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class GigFeeCalculator1Tests: XCTestCase {
+class GigFeeCalculator2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

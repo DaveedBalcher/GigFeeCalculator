@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43194CFC1A3B531400600BDF"
-               BuildableName = "GigFeeCalculator1.app"
-               BlueprintName = "GigFeeCalculator1"
-               ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+               BlueprintIdentifier = "430196071A4F166F00A9915A"
+               BuildableName = "GigFeeCalculator2.app"
+               BlueprintName = "GigFeeCalculator2"
+               ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43194D111A3B531400600BDF"
-               BuildableName = "GigFeeCalculator1Tests.xctest"
-               BlueprintName = "GigFeeCalculator1Tests"
-               ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+               BlueprintIdentifier = "4301961E1A4F166F00A9915A"
+               BuildableName = "GigFeeCalculator2Tests.xctest"
+               BlueprintName = "GigFeeCalculator2Tests"
+               ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "43194D111A3B531400600BDF"
-               BuildableName = "GigFeeCalculator1Tests.xctest"
-               BlueprintName = "GigFeeCalculator1Tests"
-               ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+               BlueprintIdentifier = "4301961E1A4F166F00A9915A"
+               BuildableName = "GigFeeCalculator2Tests.xctest"
+               BlueprintName = "GigFeeCalculator2Tests"
+               ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43194CFC1A3B531400600BDF"
-            BuildableName = "GigFeeCalculator1.app"
-            BlueprintName = "GigFeeCalculator1"
-            ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+            BlueprintIdentifier = "430196071A4F166F00A9915A"
+            BuildableName = "GigFeeCalculator2.app"
+            BlueprintName = "GigFeeCalculator2"
+            ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43194CFC1A3B531400600BDF"
-            BuildableName = "GigFeeCalculator1.app"
-            BlueprintName = "GigFeeCalculator1"
-            ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+            BlueprintIdentifier = "430196071A4F166F00A9915A"
+            BuildableName = "GigFeeCalculator2.app"
+            BlueprintName = "GigFeeCalculator2"
+            ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "43194CFC1A3B531400600BDF"
-            BuildableName = "GigFeeCalculator1.app"
-            BlueprintName = "GigFeeCalculator1"
-            ReferencedContainer = "container:GigFeeCalculator1.xcodeproj">
+            BlueprintIdentifier = "430196071A4F166F00A9915A"
+            BuildableName = "GigFeeCalculator2.app"
+            BlueprintName = "GigFeeCalculator2"
+            ReferencedContainer = "container:GigFeeCalculator2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
